@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyBuddy</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        h2 {
+            color: #f2f5f7;
+            margin-bottom: 0.5rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        #publico p {
+            font-style: italic;
+        }
+
+        p::first-letter {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="background: #222;">
+
+    <header class="header-flex">
+        <h1>StudyBuddy</h1>
+        <nav>
+            <a href="#descricao" class="nav-link">Sobre</a>
+            <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+            <a href="#cadastro" class="nav-link">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main class="main-grid">
+        <section id="descricao">
+            <h2>O que é o StudyBuddy?</h2>
+            <p>StudyBuddy é um aplicativo web que ajuda estudantes do fundamental a organizar tarefas, provas e
+                trabalhos, enviando lembretes automáticos para que nada seja esquecido.</p>
+        </section>
+
+        <section id="funcionalidades">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>Cadastro de tarefas e provas com data de entrega</li>
+                <li>Lembretes por <span class="highlight">e-mail</span> e notificações no navegador</li>
+                <li>Visão de calendário mensal e semanal</li>
+                <li>Painel de progresso com tarefas concluídas e pendentes</li>
+                <li>Perfil personalizado do usuário</li>
+            </ul>
+        </section>
+
+        <section id="publico">
+            <h2>Público‑Alvo</h2>
+            <p>Estudantes do 6º ao 9º ano, professores e pais que desejam tornar a rotina escolar mais organizada e
+                produtiva.</p>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastre-se Agora</h2>
+            <form action="#" method="post" class="form-flex">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+                <label for="email">E‑mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@escola.com" required />
+
+                <label for="serie">Série:</label>
+                <input type="text" id="serie" name="serie" placeholder="Ex: 7º ano" />
+
+                <button type="submit" class="btn">Quero Acessar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Contato: <a href="mailto:contato@studybuddy.com">contato@studybuddy.com</a> | Telefone: <a
+                href="tel:+5571999999999">(71) 9 9999‑9999</a></p>
+    </footer>
+</body>
+
+</html>
